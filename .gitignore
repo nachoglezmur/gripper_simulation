@@ -1,0 +1,26 @@
+# Entorno y dependencias (11 GB, se recrea con pip)
+.venv/
+__pycache__/
+*.pyc
+
+# Datos generados (2.2 GB: dataset YOLO, demos, vídeos) — regenerables
+data/
+*.mp4
+
+# Entrenamientos y modelos binarios (105 MB) — regenerables, o Releases
+runs/
+weights/
+yolov8n.pt
+models/*
+!models/.gitkeep
+
+# Cachés y logs
+.pytest_cache/
+*.log
+*.csv
+
+# Sistema (Qt xcb, se regenera con get_syslibs.sh)
+.syslibs/
+
+# Restos de Windows
+*.Zone.Identifier
